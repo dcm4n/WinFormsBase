@@ -1,0 +1,47 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+// Expandable content script from flooble.com.
+// For more information please visit:
+//   http://www.flooble.com/scripts/expand.php
+// Copyright 2002 Animus Pactum Consulting Inc.
+//----------------------------------------------
+
+var ie4 = false; if(document.all) { ie4 = true; }
+function getObject(id) { if (ie4) { return document.all[id]; } else { return document.getElementById(id); } }
+function toggle(link, divId) { var lText = link.innerHTML; var d = getObject(divId);
+ if (lText == '+') { link.innerHTML = '-'; d.style.display = 'block'; }
+ else { link.innerHTML = '+'; d.style.display = 'none'; } }
+
+ 
+
+}
+/*
+     FILE ARCHIVED ON 11:15:52 Apr 14, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:32:53 Sep 13, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.658
+  exclusion.robots: 0.032
+  exclusion.robots.policy: 0.018
+  esindex: 0.013
+  cdx.remote: 7.842
+  LoadShardBlock: 85.039 (3)
+  PetaboxLoader3.datanode: 138.772 (5)
+  load_resource: 1785.011 (2)
+  PetaboxLoader3.resolve: 1609.45 (2)
+*/

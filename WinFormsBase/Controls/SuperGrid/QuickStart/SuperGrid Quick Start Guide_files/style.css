@@ -1,0 +1,236 @@
+/*
+Theme Name: KnowPress
+Theme URI: http://www.onethemepermonth.com/knowpress-wordpress-theme/
+Version: 1.0
+Author: Sorel Mihai
+Author URI: http://www.onethemepermonth.com/sorel-mihai/
+*/
+
+
+/* CSS RESET */
+
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+em {font-style:italic;}
+del,ins{text-decoration:none;}
+/*li{list-style:none;}*/
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+.clear { clear:both; display: block; visibility: hidden;}
+a:hover, .sidebar a:hover, .leftContent a:hover { color: #000000; }
+
+
+/* GENERAL TAGS */
+
+body { font-family: 'Arial', 'Trebuchet MS', 'Verdana'; font-size: 12px; background: #eeeeee url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/bodyBg.jpg) repeat-y center top; }
+.wrap { width: 960px; margin: 0px auto 0px auto; }
+
+
+/* HEADER */
+
+.header { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/headerBg.jpg) repeat-x center top; padding-left: 20px; }
+.header h1 { font-size: 38px; font-weight: bold; letter-spacing: -2px; line-height: 61px; }
+.header h1 a { text-decoration: none; color: #ffffff; }
+.header p { font-family: 'Verdana', 'Trebuchet MS', 'Arial'; font-size: 12px; color: #a6a6a6; line-height: 19px; }
+.header .blogTitle { width: 600px; padding: 25px 0 20px 150px; display: block; height: 100px; }
+
+
+/* MENU */
+
+.menu { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/menuBg.jpg) repeat-x center top; padding-bottom: 2px; }
+.menu ul { margin: 0px 30px; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/menuSeparator.jpg) repeat-y center left; padding: 14px 0px; }
+.menu ul li { display: inline; font-family: 'Trebuchet MS', 'Arial', 'Verdana'; font-size: 13px;  }
+.menu ul li a { text-transform: uppercase; text-decoration: none; padding: 14px 20px; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/menuSeparator.jpg) repeat-y center right;  margin-right: -3px; color: #858585; }
+.menu ul li a:hover, .menu ul li.current_page_item a { color: #000000; }
+
+
+/* SEARCH AND CONTACT */
+
+.supportSection { background: #eeeeee url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/contactBg.jpg) repeat-y center right; }
+
+.supportSection .searchForm { width: 630px; border: solid 30px #eeeeee; background: #eeeeee; float: left;  }
+.supportSection .searchForm form input#s { width: 430px; border: solid 1px #ffffff; float: left; font-size: 12px; color: #868686; font-family: 'Verdana', 'Trebuchet MS', 'Arial'; font-style: italic; margin: 28px 0px 30px 30px; }
+.supportSection .searchForm form input.b { width: 120px; height: 32px; background: none; cursor: pointer; border: none; float: right; margin: 20px 20px 20px 10px;}
+
+.supportSection .contactLink { cursor: pointer; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/support.jpg) no-repeat center left; width: 150px; float: right; margin: 30px 20px; padding: 4px 0px 4px 80px; }
+.supportSection .contactLink a { color: #4d4d4d; font-family: 'Verdana', 'Trebuchet MS', 'Arial'; font-size: 12px; line-height: 18px; }
+.supportSection .contactLink a strong {  display: block; font-size: 18px; font-family: 'Arial', 'Trebuchet MS', 'Verdana'; color: #000000; font-weight: bold; margin-bottom: 4px; }
+
+.leftContent .sectionHeading p { font-size: 11px; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; color: #868686; margin: -14px 20px 20px 20px; }
+.leftContent .sectionHeading p a { color: #444444; }
+.supportSection a:hover { color: #000000; }
+
+
+/* LEFT CONTENT - HOMEPAGE */
+
+.leftContent { width: 690px; float: left; }
+.leftContent .item { margin: 25px 30px; }
+.leftContent .item h2 { font-size: 22px; font-weight: bold; letter-spacing: -0.4px; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/headingBg.jpg) repeat-x center bottom; padding: 15px 0px; }
+
+.leftContent .categories .categoryItem { width: 190px; float: left; margin: 15px 0px 15px 0px; }
+.leftContent .categories .space { margin: 15px 30px 0px 30px; }
+.leftContent .categories .categoryItem a { font-size: 18px; font-weight: bold; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/folderIcon.jpg) no-repeat center left; letter-spacing: -0.5px; text-decoration: none; padding-left: 23px; color: #000000; }
+.leftContent .categories .categoryItem p { font-family: 'Verdana', 'Arial', 'Trebuchet MS'; font-size: 11px; color: #828282; line-height: 15px; margin-top: 4px; }
+.leftContent .categories .clear { border-top: solid 1px #ededed; visibility: visible;  }
+
+.leftContent .featured, .leftContent .latest-half { width: 300px; float: left; margin: 0px 0px 0px 30px; }
+.leftContent .item ul { margin-top: 15px; }
+.leftContent .featured li, .leftContent .latest-half li, .leftContent .latest-full li { padding: 0px 0px 10px 23px; }
+.leftContent .featured li a, .leftContent .latest-half li a, .leftContent .latest-full li a { font-size: 11px; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; color: #828282; text-decoration: none; }
+.leftContent .featured li a strong, .leftContent .latest-half li a strong, .leftContent .latest-full li a strong { font-size: 15px; font-family: 'Arial', 'Trebuchet MS', 'Verdana'; color: #262626; font-weight: bold; display: block; }
+
+.leftContent .featured li { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/featuredIcon.jpg) no-repeat top left; }
+.leftContent .latest-half li, .leftContent .latest-full li { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/articleIcon.jpg) no-repeat top left; }
+.leftContent .latest-full li { width: 275px; float: left; }
+.leftContent .latest-full li.margin { margin-left: 30px; }
+
+.leftContent .tags h2 { margin-bottom: 10px; }
+.leftContent .tags a { text-decoration: none; color: #444444; }
+.leftContent .tags a:hover { color: #777777; }
+
+
+/* ARCHIVE - SEARCH RESULTS */
+
+.leftContent .sectionHeading { background: #e9e9e9 url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/sectionTitleBg.jpg) repeat-x center bottom; padding-bottom: 6px;}
+.leftContent .sectionHeading h2 { font-size: 26px; font-weight: bold; color: #6e6e6e; letter-spacing: -1px; display: block; border: solid 20px #e9e9e9; }
+.leftContent .sectionHeading h2 strong { color: #454545; }
+
+.leftContent .article { padding: 30px 20px; border-bottom: solid 1px #E1E1E1; }
+.leftContent .article .articleContent { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/articleIcon.jpg) no-repeat top left;  padding-left: 25px; float: left; width: 600px;}
+.leftContent .article h3 { font-weight: bold; color: #262626; font-size: 18px; letter-spacing: -0.3px; line-height: 15px; }
+.leftContent .article h3 a { color: #262626; text-decoration: none; }
+.leftContent .article small { font-size: 11px; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; color: #828282; margin-top: 4px; display: block; }
+.leftContent .article p { font-size: 12px; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; color: #454545; font-style: italic; line-height: 18px; margin: 10px 0 0 0; }
+.leftContent .article a.expandLink { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/expandBg.jpg); color: #4f4f4f; width: 19px; text-align: center; font-weight: bold; font-size: 14px; display: block; text-decoration: none; padding: 1px 0 2px 0; float: right; }
+.leftContent .featuredPost .articleContent { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/featuredIcon.jpg) no-repeat top left; }
+
+.leftContent .blogNavigation { padding: 15px 0; border-bottom: solid 1px #E1E1E1; }
+.leftContent .blogNavigation a { background: #F0F0F0; padding: 15px 20px; text-decoration: none; color: #363636; font-weight: bold; font-size: 15px; letter-spacing: -0.4px; }
+.leftContent .blogNavigation .alignleft { width: 250px; float: left; }
+.leftContent .blogNavigation .alignright { width: 250px; float: right; text-align: right; }
+
+
+/* SINGLE POST */
+
+.leftContent .post { border: solid 30px #ffffff; }
+.leftContent .post .postHead { margin-bottom: 20px; }
+.leftContent .post .postHead h2 { font-size: 33px; font-weight: bold; color: #272727; letter-spacing: -1px; border-bottom: solid 1px #D2D2D2; padding: 0px 0px 7px 0px; }
+.leftContent .post .postHead .postMeta { background: #EDEDED; padding: 10px; font-family: 'Trebuchet MS', 'Arial', 'Verdana'; line-height: 21px; text-transform: uppercase; color: #868686; }
+.leftContent .post .postHead .postMeta a { color: #484848; }
+.leftContent .post .postHead .postMeta span.tags { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/tagsIcon.jpg) no-repeat center left; padding-left: 23px; padding-right: 10px; }
+.leftContent .post .postHead .postMeta span.categories  { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/categoryIcon.jpg) no-repeat center left; padding-left: 23px; }
+
+.leftContent .post .postContent .postToolbox { width: 200px; border: solid 1px #E1E1E1; padding: 1px; float: right; margin: 0px 0px 10px 15px; }
+.leftContent .post .postContent .postToolbox strong { font-family: 'Arial', 'Trebuchet MS'; background: #000 url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/toolboxTitleBg.jpg) repeat-x center top; font-size: 14px; font-weight: bold; color: #323232; text-transform: uppercase; display: block; padding: 8px 9px 9px 9px; }
+.leftContent .post .postContent .postToolbox a.expandLink { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/expandBg.jpg); color: #4f4f4f; width: 19px; text-align: center; font-weight: bold; font-size: 14px; display: block; text-decoration: none; padding: 1px 0 2px 0; float: right; margin: -2px 0 0 0; }
+.leftContent .post .postContent .postToolbox #expandToolbox p { margin: 1px 0 0 0; border-top: solid 1px #E1E1E1; padding: 7px 10px 7px 32px; font-family: 'Verdana', 'Trebuchet MS', 'Arial'; color: #555555; }
+.leftContent .post .postContent .postToolbox #expandToolbox p.date { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/dateIcon.jpg) no-repeat 5% 50%; }
+.leftContent .post .postContent .postToolbox #expandToolbox p.addcomment { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/commentIcon.jpg) no-repeat 5% 50%; }
+.leftContent .post .postContent .postToolbox #expandToolbox p.print { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/printIcon.jpg) no-repeat 5% 50%; }
+.leftContent .post .postContent .postToolbox #expandToolbox p.edit { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/editIcon.jpg) no-repeat 5% 50%; }
+
+.leftContent .post .postContent { font-family: 'Verdana', 'Trebuchet MS', 'Arial'; }
+.leftContent .post .postContent strong { font-weight: bold; }
+.leftContent .post .postContent p { line-height: 20px; margin: 10px 0 10px 0; color: #6f6f6f; }
+.leftContent .post .postContent h5 { font-size: 14px; font-family: 'Arial', 'Trebuchet MS', 'Verdana'; font-weight: bold; letter-spacing: -0.3px; margin: 20px 0 0 0; }
+.leftContent .post .postContent h4 { font-size: 16px; font-family: 'Arial', 'Trebuchet MS', 'Verdana'; font-weight: bold; letter-spacing: -0.3px; margin: 20px 0 0 0; }
+.leftContent .post .postContent h3 { font-size: 18px; font-family: 'Arial', 'Trebuchet MS', 'Verdana'; font-weight: bold; letter-spacing: -0.3px; margin: 20px 0 0 0; }
+.leftContent .post .postContent h2 { font-size: 20px; font-family: 'Arial', 'Trebuchet MS', 'Verdana'; font-weight: bold; letter-spacing: -0.3px; margin: 20px 0 0 0; }
+.leftContent .post .postContent h1 { font-size: 22px; font-family: 'Arial', 'Trebuchet MS', 'Verdana'; font-weight: bold; letter-spacing: -0.3px; margin: 20px 0 0 0; }
+.leftContent .post .postContent ul, .leftContent .post .postContent ol { margin: 20px 0px 20px 50px; line-height: 20px; font-size: 13px; }
+.leftContent .post .postContent li { color: #454545; padding: 1px 0 3px 14px; }
+
+
+/* COMMENTS */
+
+.postComments{ border: solid 30px #ffffff; margin-top: -20px; clear:both; }
+.postComments h2, .commentForm h2 { font-size: 25px; color: #272727; font-weight: bold; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/headingBg.jpg) repeat-x center bottom; padding-bottom: 15px; }
+.postComments .comment { border: solid 1px #E1E1E1; padding: 1px; margin-top: 15px; }
+.postComments .comment .commentHead { font-family: 'Arial', 'Trebuchet MS'; background: #000 url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/toolboxTitleBg.jpg) repeat-x center top; display: block; padding: 8px 9px 9px 9px; }
+.postComments .comment .commentHead strong { font-size: 14px; color: #323232; text-transform: uppercase; font-weight: bold;}
+.postComments .comment .commentHead strong small { color: #919191; font-weight: bold; font-size: 13px; text-transform: none; }
+.postComments .comment .entry { color: #606060; font-size: 12px; line-height: 18px; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; border: solid 20px #ffffff; }
+.postComments ul { border: solid 20px #ffffff; }
+.postComments ul .comment { margin-top: 0px; }
+.postComments .comment .commentHead a { text-decoration: none; }
+.postComments .comment .commentHead a.expandLink { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/expandBg.jpg); color: #4f4f4f; width: 19px; text-align: center; font-weight: bold; font-size: 14px; display: block; text-decoration: none; padding: 1px 0 2px 0; float: right; margin: -2px 0 0 0; }
+
+.commentForm { width: 90%; margin: 0 auto 0 auto; }
+.commentForm form { width: 100%; margin-top: 20px; }
+.commentForm input, .commentForm label, .commentForm textarea { display: block; color: #525252; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; margin: 10px 0 5px 0; }
+.commentForm input#author, .commentForm input#email, .commentForm input#url, .commentForm textarea { padding: 10px 5px; border: solid 1px #E1E1E1; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/inputBg.jpg) repeat-x center top; }
+.commentForm textarea { width: 97%; height: 100px; }
+.commentForm input { width: 50%; }
+.commentForm input.submit { width: 125px; height: 29px; display: block; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/addComment.jpg) no-repeat center top; border: none; margin-top: 20px; }
+
+.postComments .commentForm { border: solid 1px #E1E1E1; padding: 26px; margin-top: 15px; }
+
+.commentP { padding: 20px; border: dashed 1px #CDCDCD; background: #F0F0F0; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; color: #4A4A4A; margin-top: -30px; }
+
+/* SIDEBAR */
+
+.sidebar { width: 270px; float: right; }
+.sidebar .sideItem { border: solid 20px #F0F0F0; }
+.sidebar .sideItem h3 { font-size: 18px; font-weight: bold; color: #292929; letter-spacing: -0.7px; margin-bottom: 10px; }
+
+.sidebar .loginForm input#log, .sidebar .loginForm input#pwd { background: #ffffff url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/inputBg.jpg) repeat-x center top; border: solid 1px #DEDEDE; display: block; padding: 10px; color: #525252; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; width: 210px; margin-bottom: 7px; }
+.sidebar .loginForm label { display: block; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; color: #525252; margin: 2px 0 2px 0; }
+.sidebar .loginForm label.submit { text-align: right; }
+.sidebar .loginForm label.submit input { cursor: pointer; width: 83px; height: 29px; border: none; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/loginButton.jpg) no-repeat center top; display: block; float: right; }
+.sidebar .loginForm a { display: block; clear: both; line-height: 16px; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; font-size: 11px;  }
+
+.sidebar .loginScreen p { padding-top: 10px;  text-align: center; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; line-height: 22px; color: #878787; }
+.sidebar .loginScreen p strong { font-weight: bold; display: block; font-family: 'Arial', 'Trebuchet MS', 'Verdana'; font-size: 15px; color: #111111; letter-spacing: -0.2px; }
+.sidebar .loginScreen p a { color: #3E3E3E; }
+
+.sidebar ul { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/ulBg.jpg) repeat-x center top; padding-top: 5px; }
+.sidebar ul li { font-family: 'Verdana', 'Arial', 'Trebuchet MS'; border-bottom: solid 1px #DDDDDD; padding: 7px 0px 8px 0px; }
+
+form#searchform { background: #ffffff; border: solid 1px #D0D1D3; padding: 10px; margin: -10px 0 -10px 0; }
+form#searchform input#s { width: 100px; border: solid 1px #ffffff; float: left; font-size: 13px; font-style: italic; color: #73808D; }
+form#searchform input.b { width: 58px; height: 12px; display: block; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/searchButton.jpg) no-repeat center top; border: none; float: right; margin-top: 4px; }
+
+.search-form { border: 15px solid #EDF3F4; margin: 20px 0 0 0; padding: 0px;}
+.search-form form { margin: 0px; background: #ffffff; border: solid 1px #D1DADB; padding: 5px; }
+.search-form input.b { width: 66px; height: 14px; display: block; text-indent: -9999px; background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/search.jpg); border: solid 1px #ffffff; float: right; margin: 4px 2px 0 0;}
+.search-form input#s { width: 180px; float: left; border: solid 1px #ffffff; color: #808E90; font-style: italic; font-size: 13px; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; }
+
+
+
+/* FOOTER */
+
+.footer { background: url(/web/20190414102900im_/http://www.devcomponents.com/kb2/wp-content/themes/KnowPress/images/footerBg.jpg) repeat-x center top; padding: 0px 0px 30px 10px; margin-top: 30px; }
+.footer p strong { font-size: 22px; font-weight: bold; letter-spacing: -1px; color: #ffffff; margin-bottom: 5px; font-family: 'Arial', 'Trebuchet MS', 'Verdana'; display: block;}
+.footer p { color: #a6a6a6; font-family: 'Verdana', 'Arial', 'Trebuchet MS'; line-height: 18px; height: 50px;  padding: 65px 0 72px 130px;  }
+.footer p a { color: #a6a6a6; }
+.footer p a:hover { text-decoration: none; }
+/*
+     FILE ARCHIVED ON 10:29:00 Apr 14, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:32:50 Sep 13, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.598
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.015
+  esindex: 0.013
+  cdx.remote: 5.835
+  LoadShardBlock: 152.976 (3)
+  PetaboxLoader3.datanode: 246.913 (5)
+  load_resource: 743.447 (2)
+  PetaboxLoader3.resolve: 590.778 (2)
+*/
