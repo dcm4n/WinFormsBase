@@ -1,11 +1,18 @@
 ﻿using DevComponents.DotNetBar;
 using DevComponents.DotNetBar.SuperGrid;
+using System.ComponentModel;
 using System.Data;
 
 namespace WinFormsBase.Controls
 {
     public partial class SuperGrid : UserControl
     {
+        [Browsable(true)]
+        public SuperGridControl SuperGridView
+        {
+            get => superGridView;
+        }
+
         public SuperGrid()
         {
             InitializeComponent();
@@ -16,12 +23,12 @@ namespace WinFormsBase.Controls
 
             // Initial style
             Dock = DockStyle.Fill;
-            SuperGridView.PrimaryGrid.GridPanel.ColumnHeader.FilterImageVisibility = ImageVisibility.Never;
+            superGridView.PrimaryGrid.GridPanel.ColumnHeader.FilterImageVisibility = ImageVisibility.Never;
 
             // Preload empty datatable
             DataTable dummyDataTable = new DataTable();
             dummyDataTable.Rows.Add();
-            SuperGridView.PrimaryGrid.DataSource = dummyDataTable;
+            superGridView.PrimaryGrid.DataSource = dummyDataTable;
         }
 
         private void SuperGridView_GetCellStyle(object sender, GridGetCellStyleEventArgs e)

@@ -1,6 +1,7 @@
-﻿using DevComponents.DotNetBar.SuperGrid;
-using DevComponents.DotNetBar;
+﻿using DevComponents.DotNetBar;
+using DevComponents.DotNetBar.SuperGrid;
 using DevComponents.DotNetBar.SuperGrid.Style;
+using System.ComponentModel;
 
 namespace WinFormsBase.Controls
 {
@@ -32,35 +33,34 @@ namespace WinFormsBase.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            SuperGridView = new SuperGridControl();
+            superGridView = new SuperGridControl();
             SuspendLayout();
             // 
             // SuperGridView
             // 
-            SuperGridView.BackColor = Color.White;
-            SuperGridView.Dock = DockStyle.Fill;
-            SuperGridView.ForeColor = Color.Black;
-            SuperGridView.Location = new Point(0, 0);
-            SuperGridView.Name = "SuperDataGridView";
-            SuperGridView.PrimaryGrid.EnableColumnFiltering = true;
-            SuperGridView.PrimaryGrid.EnableFiltering = true;
-            SuperGridView.PrimaryGrid.Filter.Visible = true;
-            SuperGridView.PrimaryGrid.FilterMatchType = FilterMatchType.RegularExpressions;
-            SuperGridView.Size = new Size(150, 150);
-            SuperGridView.TabIndex = 0;
-            SuperGridView.GetCellStyle += SuperGridView_GetCellStyle;
+            superGridView.BackColor = Color.White;
+            superGridView.Dock = DockStyle.Fill;
+            superGridView.ForeColor = Color.Black;
+            superGridView.Location = new Point(0, 0);
+            superGridView.Name = "SuperDataGridView";
+            superGridView.PrimaryGrid.EnableColumnFiltering = true;
+            superGridView.PrimaryGrid.EnableFiltering = true;
+            superGridView.PrimaryGrid.Filter.Visible = true;
+            superGridView.PrimaryGrid.FilterMatchType = FilterMatchType.RegularExpressions;
+            superGridView.Size = new Size(150, 150);
+            superGridView.TabIndex = 0;
+            superGridView.GetCellStyle += SuperGridView_GetCellStyle;
             // 
             // SuperGrid
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(SuperGridView);
+            Controls.Add(superGridView);
             Name = "SuperGrid";
             ResumeLayout(false);
         }
 
         #endregion
-
-        public SuperGridControl SuperGridView;
+        private SuperGridControl superGridView;
     }
 }

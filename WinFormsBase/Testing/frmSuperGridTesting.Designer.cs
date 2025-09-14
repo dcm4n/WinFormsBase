@@ -32,9 +32,9 @@ namespace WinFormsBase
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             statusStrip1 = new StatusStrip();
-            superGrid1 = new WinFormsBase.Controls.SuperGrid();
             toolStrip1 = new ToolStrip();
             suggestionsComboBox1 = new WinFormsBase.Controls.SugestionsComboBox.SuggestionsComboBox();
+            superGrid1 = new WinFormsBase.Controls.SuperGrid();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -43,9 +43,9 @@ namespace WinFormsBase
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(statusStrip1, 0, 3);
-            tableLayoutPanel1.Controls.Add(superGrid1, 0, 2);
             tableLayoutPanel1.Controls.Add(toolStrip1, 0, 0);
             tableLayoutPanel1.Controls.Add(suggestionsComboBox1, 0, 1);
+            tableLayoutPanel1.Controls.Add(superGrid1, 0, 2);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -65,14 +65,6 @@ namespace WinFormsBase
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
-            // superGrid1
-            // 
-            superGrid1.Dock = DockStyle.Fill;
-            superGrid1.Location = new Point(3, 68);
-            superGrid1.Name = "superGrid1";
-            superGrid1.Size = new Size(794, 357);
-            superGrid1.TabIndex = 2;
-            // 
             // toolStrip1
             // 
             toolStrip1.Location = new Point(0, 0);
@@ -91,6 +83,14 @@ namespace WinFormsBase
             suggestionsComboBox1.Size = new Size(121, 23);
             suggestionsComboBox1.TabIndex = 4;
             // 
+            // superGrid1
+            // 
+            superGrid1.Dock = DockStyle.Fill;
+            superGrid1.Location = new Point(3, 68);
+            superGrid1.Name = "superGrid1";
+            superGrid1.Size = new Size(794, 357);
+            superGrid1.TabIndex = 5;
+            // 
             // frmSuperGridTesting
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -99,6 +99,7 @@ namespace WinFormsBase
             Controls.Add(tableLayoutPanel1);
             Name = "frmSuperGridTesting";
             Text = "SuperGridTesting";
+            FormClosing += frmSuperGridTesting_FormClosing;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
@@ -108,8 +109,8 @@ namespace WinFormsBase
 
         private TableLayoutPanel tableLayoutPanel1;
         private StatusStrip statusStrip1;
-        private Controls.SuperGrid superGrid1;
         private ToolStrip toolStrip1;
         private Controls.SugestionsComboBox.SuggestionsComboBox suggestionsComboBox1;
+        private Controls.SuperGrid superGrid1;
     }
 }
