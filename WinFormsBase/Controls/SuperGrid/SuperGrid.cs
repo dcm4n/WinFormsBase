@@ -7,11 +7,37 @@ namespace WinFormsBase.Controls
 {
     public partial class SuperGrid : UserControl
     {
+        #region PUBLIC PROPERTIES
+
         [Browsable(true)]
         public SuperGridControl SuperGridView
         {
             get => superGridView;
         }
+
+        #endregion
+
+        #region PUBLIC METHODS
+
+        public event EventHandler<GridCellDoubleClickEventArgs> CellDoubleClick
+        {
+            add => SuperGridView.CellDoubleClick += value;
+            remove => SuperGridView.CellDoubleClick -= value;
+        }
+
+        public event EventHandler<GridRowDoubleClickEventArgs> RowDoubleClick
+        {
+            add => SuperGridView.RowDoubleClick += value;
+            remove => SuperGridView.RowDoubleClick -= value;
+        }
+
+        public event EventHandler<GridGetCellStyleEventArgs> GetCellStyle
+        {
+            add => SuperGridView.GetCellStyle += value;
+            remove => SuperGridView.GetCellStyle -= value;
+        }
+
+        #endregion
 
         public SuperGrid()
         {
