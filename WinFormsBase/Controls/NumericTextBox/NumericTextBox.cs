@@ -8,7 +8,6 @@ namespace WinFormsBase.Controls.NumericTextBox
         {
             Controls[0].Visible = false;
             Maximum = Decimal.MaxValue;
-            DecimalPlaces = 2;
         }
 
         protected override void OnTextBoxResize(object? source, EventArgs e)
